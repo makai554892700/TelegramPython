@@ -1,8 +1,8 @@
-Flask==0.12.2
-telethon==0.18.2.3
-flask-sqlalchemy==2.3.2
-mysqlclient==1.3.12
+Flask==1.1.2
+telethon==1.13.0
+flask-sqlalchemy==2.4.1
+mysqlclient==1.4.6
 flask-script==2.0.6
-flask-Migrate==2.1.1
-SQLAlchemy==1.2.6
-jsonpickle==0.9.6
+flask-Migrate==2.5.3
+SQLAlchemy==1.3.16
+jsonpickle==1.4.1

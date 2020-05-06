@@ -2,7 +2,8 @@ from ..models import db, Message
 from . import telegram
 from flask import request
 import jsonpickle
-from .telegram_client import user_1, user_2, user_3, user_4
+# from .telegram_client import user_1, user_2, user_3, user_4
+from .telegram_client import user_1
 
 
 # 列出所有tag信息
@@ -38,12 +39,12 @@ def send_message_by_user():
         username = json_data["username"]
         if user == 1:
             user_1.send_message(username, message)
-        elif user == 2:
-            user_2.send_message(username, message)
-        elif user == 3:
-            user_3.send_message(username, message)
-        elif user == 4:
-            user_4.send_message(username, message)
+        # elif user == 2:
+        #     user_2.send_message(username, message)
+        # elif user == 3:
+        #     user_3.send_message(username, message)
+        # elif user == 4:
+        #     user_4.send_message(username, message)
         else:
             return "no_user type error"
     else:

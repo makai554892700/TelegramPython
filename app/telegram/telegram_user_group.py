@@ -1,4 +1,5 @@
-from .telegram_client import user_1, user_2, user_3, user_4
+# from .telegram_client import user_1, user_2, user_3, user_4
+from .telegram_client import user_1
 from sqlalchemy.exc import IntegrityError
 from ..models import db, UserGroup, UserTAGInfo
 from telethon.tl.types import PeerUser, PeerChat, PeerChannel, Channel, InputUser, InputChannel
@@ -206,12 +207,12 @@ def list_all_group(user_id: int):
     try:
         if user_id == "1":
             responses = user_1.iter_dialogs(10000)
-        elif user_id == "2":
-            responses = user_2.iter_dialogs(10000)
-        elif user_id == "3":
-            responses = user_3.iter_dialogs(10000)
-        elif user_id == "4":
-            responses = user_4.iter_dialogs(10000)
+        # elif user_id == "2":
+        #     responses = user_2.iter_dialogs(10000)
+        # elif user_id == "3":
+        #     responses = user_3.iter_dialogs(10000)
+        # elif user_id == "4":
+        #     responses = user_4.iter_dialogs(10000)
         else:
             return "user_id must be 1/2/3/4;now user id = " + str(user_id)
     except:
