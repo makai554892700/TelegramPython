@@ -1,4 +1,4 @@
-Flask==1.1.2
+Flask==2.3.2
 telethon==1.13.0
 flask-sqlalchemy==2.4.1
 mysqlclient==1.4.6
